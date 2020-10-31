@@ -63,3 +63,214 @@
     </table>
 </body>
 </html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML теги</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table {
+            /*граница(обводка)*/
+            border: 2px yellow solid;
+            /*Убираем отступы между ячейками таблицы*/
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid #EE82EE;
+            background: #DC143C ;
+            /*выравнивание текста по центру*/
+            text-align: center;
+            color: #FFFF00;
+        }
+        th{
+            border: 1px solid yellow;
+            /*Цвет фона*/
+            background:#A52A2A;
+            color: #FFFF00;
+        }
+    </style>
+</head>
+<body>
+     <h1> HTML теги</h1>
+<header>
+        <a href="index.html"><img id="left" src="https://pngimage.net/wp-content/uploads/2018/06/%D1%81%D1%82%D1%80%D0%B5%D0%BB%D0%BA%D0%B0-%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80-png-1.png" alt="Левая стрелка">
+        </a>
+        <h1>Аниме</h1>
+        <a href="border.html"><img id="right" src="https://pngimage.net/wp-content/uploads/2018/06/%D1%81%D1%82%D1%80%D0%B5%D0%BB%D0%BA%D0%B0-%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80-png-1.png" alt="Правая стрелка">
+        </a>
+    </header>
+ <table> 
+        <!-- tr>th*2 -->
+        <tr>
+            <th width="30%">Тег</th>
+            <th>Предназначение тега</th>
+        </tr>
+        <!-- Строка 1-->
+        <tr>
+            <!-- Элемент 1 -->
+            <td>&lthml&gt &lt/html&gt</td>
+            <!-- Элемент 2 -->
+            <td>Указывает программе просмотра страниц, что внутри будет HTML документ</td>
+        </tr>
+        <!-- Строка 2 -->
+        <tr>
+            <!-- td*2 -->
+            <td>&lthead&gt &lt/head&gt</td>
+            <td>Определет место, где помещается различная информация не отобрпжаемая в теле документаю Здесь распологаетс тег названия документа и прочие теги для настройки страницы</td>
+        </tr>
+        <tr>
+            <td>&ltbody&gt &lt/body&gt</td>
+            <td>Определяет видимую часть документа</td>
+        </tr>
+        <tr>
+            <td>&lttitle&gt &lt/title&gt</td>
+            <td>Помещает название документа в оглавление программы просмотра страниц</td>
+        </tr>
+        <tr>
+            <td>&ltpre&gt &lt/pre&gt</td>
+            <td>Обрамляет предварительно отформатированный текст.</td>
+        </tr>
+        <tr>
+            <td>&lth1&gt &lt/h1&gt</td>
+            <td>Создаёт самый большой заголовок</td>
+        </tr>
+        <tr>
+            <td>&lth6&gt &lt/h6&gt</td>
+            <td>Создаёт самый маленький заголовок</td>
+        </tr>
+        <tr>
+            <td>&ltb&gt &lt/b&gt</td>
+            <td>Создаёт жирный текст</td>
+        </tr>
+        <tr>
+            <td>&lti&gt &lt/i&gt</td>
+            <td>Создает наклонный текст</td>
+        </tr>
+        <tr>
+            <td>&lttt&gt &lt/tt&gt</td>
+            <td>Создает текст - имитирующий стиль печатной машинки</td>
+        </tr>
+        <tr>
+            <td>&ltcite&gt &lt/cite&gt</td>
+            <td>Используется для цитат, обычно наклонный текст</td>
+        </tr>
+[13:40]
+        <tr>
+            <td>&ltem&gt &lt/em&gt</td>
+            <td>Используется для выделения из текста слова (наклонный или жирный текст)</td>
+        </tr>
+        <tr>
+            <td>&ltstrong&gt &lt/strong&gt</td>
+            <td>Используется для выделения наиболее выжных частей текста (наклонный или жирный текст)</td>
+        </tr>
+        <tr>
+            <td>&ltfont size=?&gt &lt/font&gt</td>
+            <td>Устанавливает размер текста в пределах от 1 до 7</td>
+        </tr>
+        <tr>
+            <td>&ltfont color=?&gt &lt/font&gt</td>
+            <td>Устанавливает цвет текста, используя значение цвета в виде RRGGBB</td>
+        </tr>
+        <tr>
+            <td>&lta href="URL"&gt &lt/а&gt</td>
+            <td>Создает гиперссылку на другие документы или часть текущего документа</td>
+        </tr>
+        <tr>
+            <td>&lthref="mailto:EMAIL"&gt &lt/a&gt</td>
+            <td>Создает гиперссылку вызова почтовой программы для написания письма автору документа</td>
+        </tr>
+        <tr>
+            <td>
+            &lta name="NAME"&gt &lt/a&gt</td>
+            <td>
+            Отмечает часть текста как цель для гипперссылок в документе    
+            </td>
+        </tr>
+[13:40]
+      <tr>
+            <td>
+            &lta href="#NAME"&gt &lt/a&gt</td>
+            <td>
+                Создает гиперссылку на часть текущего документа
+            </td>
+        </tr>
+        <tr>
+            <td>
+            &ltp&gt</td>
+            <td>
+                создаёт новый параграф
+            </td>
+        </tr>
+                <tr>
+            <td>
+            &ltp align=?&gt</td>
+            <td>
+                Выравнивает параграф относительно одной из сторон документа, значения: left, right, или center
+            </td>
+        </tr>
+        <tr>
+            <td>
+            &ltbr&gt</td>
+            <td>
+                Вставляет перевод строки
+            </td>
+        </tr>
+        <tr>
+            <td>&ltblockquote&gt &lt/blockquote&gt</td>
+            <td>Создает отступы с обеих сторон текста</td>
+        </tr>
+        <tr>
+            <td>&ltdl&gt &lt/dl&gt</td>
+            <td>Создает список определений</td>
+        </tr>
+        <tr>
+            <td>&ltdt&gt</td>
+            <td>Определяет каждый из терминов списка</td>
+        </tr>
+        <tr>
+            <td>&ltdd&gt</td>
+            <td>Описывает каждое определение</td>
+        </tr>
+        <tr>
+            <td>&ltol&gt &lt/ol&gt</td>
+            <td>Создаёт нумерованнный список</td>
+        </tr>
+        <tr>
+            <td>&ltli&gt</td>
+            <td>Определяет каждый из терминов списка</td>
+        </tr>
+        <tr>
+            <td>&ltul&gt &lt/ul&gt</td>
+            <td>Создаёт ненумерованный список</td>
+        </tr>
+        <tr>
+            <td>&ltdiv align=?&gt</td>
+            <td>Важный тег используемый для форматирования больших блоков текста HTML документа, также используется в таблицах стилей</td>
+        </tr>
+[13:40]
+     <tr>
+            <td>&ltimg src="name"&gt</td>
+            <td>Добавляет изображение в HTML документ</td>
+        </tr>
+        <tr>
+            <td>&lthr&gt</td>
+            <td>Добавляет в HTML документ горизонтальную линию</td>
+        </tr>
+        <tr>
+            <td>&lttable&gt &lt/table&gt</td>
+            <td>Создает таблицу</td>
+        </tr>
+        <tr>
+            <td>&lttd&gt &lt/td&gt</td>
+            <td>Определяет отдельную ячейку в таблице</td>
+        </tr>
+        <tr>
+            <td>&lttr&gt &lt/tr&gt</td>
+            <td>Определяет строку в таблице</td>
+        </tr>
+    </table>
+</body>
+</html>

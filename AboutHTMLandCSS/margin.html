@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Поля и отступы</title>
+	<style>
+		img {
+			width: 100%;
+		}
+		#test1 {
+			width: 200px;
+			height: 100px;
+			background: magenta;
+			/*Внешний отступ*/
+			margin-top: 100px
+			margin-bottom: 100px
+			border: 5px solid firebrick;
+			/*Внутрений отступ*/
+			padding-left: 50px;
+			padding-top: 30px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="units.html"><img id="right" src="https://img2.freepng.ru/20180404/qkq/kisspng-arrow-computer-icons-clip-art-boho-arrow-5ac50bf665aab5.0826846515228630944164.jpg" alt="Левая стрелка"></a>
+		<h1>Поля и отступы</h1>
+		<a href=""><img id="left" src="https://img2.freepng.ru/20180404/qkq/kisspng-arrow-computer-icons-clip-art-boho-arrow-5ac50bf665aab5.0826846515228630944164.jpg" alt="Правая стрелка"></a>
+	</header>
+	<main>
+		<img src="http://html-plus.in.ua/wp-content/uploads/2017/04/box-model.jpg">
+
+		<div id="test1">Какой-то текст внутри блока</div>
+
+		<h2>Сокращённая запись margin и padding</h2>
+		<ul>
+			<li><b>4 значения:</b> задаются отступы для всех сторон в таком порядке: сверху,справа,снизу,слева. <i>Пример:</i>padding: 3px 5px 2px 7px; </li>
+			<li><b>3 значения</b> задаётся размер сначала для левой стороны, потом одновременно для левой и правой, а затем - для нижней. <i>Пример:</i> margin: 10px auto 5px;</li>
+			<li><b>2 значения:</b> задаём сначала отступы одновременно для верхней и нижней стороны, а потом - одновременно для левой и правой. <i>Пример:</i> padding: 10px 20px; </li>
+			<li><b>1 значение:</b> задаются одинаковвые отступы для всех сторон. <i>Пример:</i> margin: 100px; </li>
+		</ul>
+	</main>
+</body>
+</html>

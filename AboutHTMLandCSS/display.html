@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Свойство display</title>
+	<style>
+		#elem1, #elem2, #elem3, #elem4 {
+			color: white;
+			font-size: 3rem;
+			text-align: center;
+		}
+		#elem1 {
+			background: springgreen;
+			width: 60px;
+			height: 100px;
+		}
+		#elem2 {
+			background: gold;
+			width: 100px;
+			height: 60px;
+		}
+		#elem3 {
+			background: red;
+			width: 100px;
+			height: 100px;
+		}
+		#elem4 {
+			background: green;
+			width: 150px;
+			height: 100px;
+		}
+
+		#cotainer {
+			background: snow;
+			height: 500px;
+			margin-bottom: 50px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items:center; 
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="margin.html"><img id="right" src="https://img2.freepng.ru/20180404/qkq/kisspng-arrow-computer-icons-clip-art-boho-arrow-5ac50bf665aab5.0826846515228630944164.jpg" alt="Левая стрелка"></a>
+		<h1>Свойство display</h1>
+		<a href=""><img id="left" src="https://img2.freepng.ru/20180404/qkq/kisspng-arrow-computer-icons-clip-art-boho-arrow-5ac50bf665aab5.0826846515228630944164.jpg" alt="Правая стрелка"></a>
+	</header>
+	<main>
+		<h2>Значение none</h2>
+		<div style="border: 2px solid black">
+			Невидемый div (
+			<div style="display: none;">Я - невидимка!</div>
+			) стоит внутри скобок!
+		</div>
+
+		<h2>Значение block</h2>
+		<ul>
+			<li>Блочные элементы распологаются один над другим, вертикально (если нет особых свойств нет позицонирования)</li>
+			<li>Блок стремится расшириться на всю доступную ширину.Можно указать ширину и высоту самостоятельно.</li>
+			<li>Это значение display многие элементы стоят по умолчанию: div, h1-h6, p.</li>
+		</ul>
+		<div style="border: 2px solid black">
+				<div style="border: 1px solid red; width: 50%">Первый</div>
+				<div style="border: 1px solid green">Второй</div>
+		</div>
+
+		<h2>Значение inline</h2>
+		<ul>
+			<li>Элементы распологаются на той же строке, последовательно.</li>
+			<li>Ширина и высота элемента определяется по содержимому.Поменять их нельзя.</li>
+			<li>Инлайн элементы по умолчанию: span, a, b, i.</li>
+		</ul>
+		<span style="border: 2px solid black">
+				<div style="display:inline; border: 1px solid red; width: 50%">Ширина</div>
+				<div style="display:inline; border: 1px solid green">игнорируется</div>
+		</span>
+		<h2>Значени inline-block</h2>
+		<h3>Как инлайн элемент:</h3>
+		<ul>
+			<li>Распологается в строке.</li>
+			<li>Размер устонавливается по содержимому.</li>
+		</ul>
+		<h3>Как блочный элемент:</h3>
+		<ul>
+			<li>Элемент всегда прямоугольный.</li>
+			<li>Работают свойства width/height.</li>
+		</ul>
+		<h2>Значение flex</h2>
+		<div id="cotainer">
+			<div id="elem1">1</div>
+			<div id="elem2">2</div>
+			<div id="elem3">3</div>
+			<div id="elem4">4</div>
+		</div>
+
+		<h3>flex-direction - направление элементов внутри flex-контейнера. (column/row/column-reverse/row-reverse)</h3>
+		<h3>justify-content - выравнивание элементов по главному направлению</h3>
+		<img src="https://raw.githubusercontent.com/kompot-Vjacovich/CoddyWork/master/%D0%92%D0%BE%D1%81%D0%BA%D1%80%D0%B5%D1%81%D0%B5%D0%BD%D1%8C%D0%B5%2012.00/web/justify-content.jpg" alt="">
+		<h3>align-items - выравнивание элементов по второстепенному направлению</h3>
+		<ol>
+		 	<li>flex-start</li>
+		 	<li>flex-end</li>
+		 	<li>center</li>
+		 	<li>stretch</li>
+		 	<li>baseline</li>
+		 </ol> 
+	</main>
+</body>
+</html>

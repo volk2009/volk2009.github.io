@@ -1,0 +1,55 @@
+table {
+    /*граница(обводка)*/
+    border: 2px yellow solid;
+    /*Убираем отступы между ячейками таблицы*/
+    border-collapse: collapse;
+}
+td {
+    border: 1px solid #EE82EE;
+    background: #DC143C ;
+    /*выравнивание текста по центру*/
+    text-align: center;
+}
+th{
+    border: 1px solid yellow;
+    /*Цвет фона*/
+    background:#A52A2A;
+    color: #FFFF00;
+}
+
+header {
+    /*Ширина*/
+    width: 70%;
+    background: Red;
+    /*Высота*/
+    height: 70px;
+    /*Внешние отступы*/
+    margin: auto;
+    /*Текст по центру*/
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    /*Выравнивание элементов по вертикали*/
+    align-items: middle;
+}
+
+
+ body {
+    background: lightcoral;
+    margin: 0;
+ }
+
+#left {
+    transform: rotate(180deg);
+    width: 64px;
+}
+
+#right {
+    width: 64px;
+}
+
+main {
+   width: 70%;
+   margin: auto;
+     
+}

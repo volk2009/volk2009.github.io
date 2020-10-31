@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Единицы измерения в HTML и CSS</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		ol {
+			font-size: 2rem
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+        <a href="border.html"><img id="right" src="https://img2.freepng.ru/20180404/qkq/kisspng-arrow-computer-icons-clip-art-boho-arrow-5ac50bf665aab5.0826846515228630944164.jpg" alt="Левая стрелка"></a>
+        <h1>Единицы измерения в HTML и CSS</h1> 
+        <a href="margrin.html"><img id="left" src="https://img2.freepng.ru/20180404/qkq/kisspng-arrow-computer-icons-clip-art-boho-arrow-5ac50bf665aab5.0826846515228630944164.jpg" alt="Правая стрелка"></a>
+	</header>
+	<main>
+		<h2>Исключения, в которых % берётся не от родителя</h2>
+		<ol style="font-size: 1em; ">
+			<li>
+				<b>margrin-left (margrin-right и т.д.</b>
+				<p>Процент берётся от ШИРИНЫ родительского блока, а не от его margrin-left</p>
+			</li>
+			<li>
+				<b>line-height (высота строки)</b>
+				<p>Процент берётся от ТЕКУЩЕГО РАЗМЕРА ШРИФТА, а не от line-height родителя</p>
+			</li>
+			<li>
+				<b>width/height</b>
+				<p>При position: fixed; процент берётся от ширины/высоты окна, а не от ширины/высоты родителя</p>
+			</li>
+			<li>
+				<b>vw</b>
+				<p>-1% ширины окна</p>
+			</li>
+			<li>
+				<b>vh</b>
+				<p>-1%-высоты окна</p>
+			</li>
+			<li>
+				<b>vmin</b>
+				<p>-наименьшее из (vw,vh)</p>
+			</li>
+			<li>
+				<b>vmax</b>
+				<p>-наибольшее из(vw,vh)</p>
+			</li>
+		</ol>
+		<h2>Единица измерения размера шрифта em</h2>
+		<div style="font-size: 10px ">
+			Текущий размер шрифта
+			<div style="font-size: 1.6em">
+				Первый текст - размер шрифта = Текущий шрифт * 1.6em = 10px*1.6 = 16px
+				<div style="font-size: 2em">
+					Второй текс - размер шрифта =32px
+					
+				</div>
+			</div>
+		</div>
+
+		<h2>Единицы измерения относительно экрана</h2>
+		<ul>
+			<li><b>vw</b> - 1% ширины окна</li>
+			<li><b>vh</b>-1%-высоты окна</li>
+			<li><b>vmin</b>-наименьшее из (vw,vh</li>
+			<li><b>vmax</b>-наибольшее из(vw,vh)</li>
+		</ul>
+
+		<h2>Единица измерения rem: смесь px и em</h2>
+		<ol>
+
+			<li>Ученье
+				<ol>
+					<!-- 64px -->
+					<li> - свет,
+						<!-- 128px -->
+							<li> а неученье
+								<ol>
+									<!-- 256 px -->
+									<li> - тьма</li>
+								</ol>
+							</li>
+						</ol>
+					</li>
+				</ol>
+			</li>
+		</ol>
+
+		<h1>Итог:</h1>
+		<ul>
+			<li><b>px</b> - абсолютные пиксели испульзуется для максимально точного задания размеров</li>
+			<li><b>%</b> - задаёт размер относительно такого же свойства родителя, кроме исключения (смотри выше)</li>
+			<li><b>em</b> - задаёт размер щрифта родителя</li>
+			<li><b>rem</b> - задаёт размер шрифта тега html</li>
+			<li><b>vw, vh, vmin, vmax</b> - относительно размера экрана</li>
+		</ul>
+	</main>
+</body>
+</html>

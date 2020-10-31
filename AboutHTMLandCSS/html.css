@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+<style>
+		#elem2, #elem3, #elem5, #elem6 {
+			color: white;
+			font-size: 3rem;
+			text-align: center;
+		}
+		#elem2 {
+			background: springgreen;
+			width: 60px;
+			height: 100px;
+		}
+		#elem3 {
+			background: crimson;
+			width: 100px;
+			height: 60px;
+		}
+		#elem5 {
+			background: red;
+			width: 100px;
+			height: 100px;
+		}
+		#elem6 {
+			background: green;
+			width: 150px;
+			height: 100px;
+		}
+
+		#cotainer {
+			background: lime;
+			height: 500px;
+			margin-bottom: 50px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items:center; 
+		}
+	</style>
+
+	<div id="cotainer">
+			<div id="elem2">2</div>
+			<div id="elem3">3</div>
+			<div id="elem5">5</div>
+			<div id="elem6">6</div>
+		</div>

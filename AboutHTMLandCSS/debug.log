@@ -1535,3 +1535,5 @@
 [1012/084601.821:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [1012/084601.822:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [1017/100836.986:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1101/210640.771:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1102/092713.054:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)

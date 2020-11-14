@@ -5,14 +5,96 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title></title>
+	<style>
+		#container {
+			width: 80%;
+			margin: auto;
+		}
+		#header, #footer {
+			width: 100%;
+			background-color: indigo;
+			color: white;
+		}
+		#content {
+			width: : 100%;
+			background-color: sandybrown;
+			position: relative;
+		}
+		#div1 {
+			margin: 0 25px;
+			height: 30px;
+			background-color: red;
+			position: static;
+		}
+		#div2 {
+			margin: 0 25px;
+			height: 50px;
+			background-color: green;
+			/*Относительно обычного расположения*/
+			position: relative;
+			/*left, right, top, bottom*/
+			left: 50px;
+			/*top: 50px;*/
+		}
+		#div3 {
+			margin: 0 25px;
+			height: 55px;
+			background-color: white;
+			/*Абсолюдное позиционирование*/
+			position: absolute;
+			left: 200px;
+			right: 20px;
+		}
+		#div4 {
+			margin: 0 25px;
+			height: 40px;
+			background-color: orangered;
+
+		}
+		#div5 {
+			margin: 0 25px;
+			height: 60px;
+			background-color: pink;
+		}
+	</style>
 </head>
 <body>
 <header>
         <a href="display.html"><img id="right" src="https://img2.freepng.ru/20180404/qkq/kisspng-arrow-computer-icons-clip-art-boho-arrow-5ac50bf665aab5.0826846515228630944164.jpg" alt="Левая стрелка"></a>
         <h1>Нужный сайт заготовка Html</h1> 
         <a href="index.html"><img id="left" src="https://img2.freepng.ru/20180404/qkq/kisspng-arrow-computer-icons-clip-art-boho-arrow-5ac50bf665aab5.0826846515228630944164.jpg" alt="Правая стрелка"></a>
-</header>
-<main>
-</main>	
+	</header>
+	<main>
+		<div id="container">
+			<div id="header">id"header"</div>
+			<div id="content">id="content"
+				<div id="div1">div1</div>
+				<div id="div2">div2</div>
+				<div id="div3">div3</div>
+				<div id="div4">div4</div>
+				<div id="div5">div5</div>
+			<div id="footer">id="footer"</div>
+			</div>
+			<h1>Итого:</h1>
+			<h2>static</h2>
+			<p>Иначе называется "без позиционирования"ю</p>
+
+			<h2>relative</h2>
+			<p>Сдвигает элемент относительно текущего места</p>
+			<ul>
+				<li>Противоположные границы left/right(top/bottom) одновременно указать нельзя.</li>
+				<li>Окружающие элементы ведут себя так, будто элемент никуда не сдвигался.</li>
+			</ul>
+			<h2>absolute</h2>
+			<p>Визуально переносит элемент на новое место.<br> Новое место вычесляется по координатам left/right/top/bottom относительно ближайшего позиционированного родителя.Если такого родителя нет, то им считается окно. </p>
+			<ul>
+				<li>Ширина элемента по умолчанию устонавливается по содержимому.</li>
+				<li>Можно указать одновременно противоположжные границы left/right(top/bottom).Элемент при этом растянется.</li>
+				<li>Окружающие элементы заполняют освободившееся место.</li>
+			</ul>
+
+			<h2>fixed</h2>
+			<p>Подвид абсолютного позиционирования, при котором элемент привязывается к координатам окна, а не документа.При прокрутке остаётся на том же месте.</p>
+	</main>	
 </body>
 </html>
